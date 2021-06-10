@@ -4,7 +4,7 @@ function solveRect(l,b){
     console.log("Solving for rectangle with l = " + l + " and b = " + b)
     rect(l, b, (err, rectangle) => {
         if(err){
-            console.log(err.name, "ERROR: ", err.message)
+            console.log(err.name.toUpperCase(), ": ", err.message)
         }
         else{
             console.log("The area of the rectangle of dimensions l = "
